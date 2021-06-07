@@ -1,0 +1,78 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+body {
+  background-color: hsl(210, 10%, 33%);
+}
+.dot {
+  height: 15px;
+  width: 15px;
+  background-color: hsl(210, 10%, 33%);
+  border-radius: 50%;
+  margin-top: 143px;
+  margin-left: 143px;
+}
+.main {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  border: 20px solid hsl(171, 66%, 44%);
+  border-radius: 50%;
+  left: 50%;
+  top: 50%;
+  background-color: hsl(233, 100%, 69%);
+  transform: translate(-50%, -50%);
+}
+
+.mins-container,
+.seconds-container,
+.hrs-container {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+.mins {
+  background: hsl(201, 11%, 66%);
+  height: 40%;
+  left: 49.5%;
+  position: absolute;
+  top: 10%;
+  transform-origin: 50% 100%;
+  width: 1%;
+}
+.seconds {
+  background: hsl(210, 10%, 33%);
+  height: 40%;
+  left: 49.5%;
+  position: absolute;
+  top: 12%;
+  transform-origin: 50% 80%;
+  width: 1%;
+}
+.hrs {
+  background: hsl(0, 0%, 84%);
+  height: 20%;
+  left: 49.5%;
+  position: absolute;
+  top: 30%;
+  transform-origin: 50% 80%;
+  width: 1%;
+}
+@keyframes mymove {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.mins-container {
+  animation: mymove 3600s infinite steps(60);
+}
+.seconds-container {
+  animation: mymove 60s infinite steps(60);
+}
+.hrs-container {
+  animation: mymove 86, 400s infinite linear;
+}

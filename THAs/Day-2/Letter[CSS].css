@@ -1,0 +1,16 @@
+@import url("https://fonts.googleapis.com/css2?family=KoHo&display=swap");
+* {
+  font-family: "KoHo", sans-serif;
+}
+.main {
+  margin-left: 50px;
+}
+.container {
+  background-color: aqua;
+  height: auto;
+  width: 40%;
+  margin-top: 20px;
+  padding-left: 30px;
+  padding-bottom: 30px;
+  padding-top: 30px;
+}
