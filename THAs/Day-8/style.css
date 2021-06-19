@@ -1,0 +1,61 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+body {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  min-height: 100vh;
+  background-color:cornflowerblue;
+}
+.main {
+  height: 400px;
+  width: 400px;
+  display: grid;
+  background-color: rgb(41, 41, 41);
+  grid-column-gap: 0;
+  grid-template-rows: repeat(20, 1fr);
+  grid-template-columns: repeat(20, 1fr);
+}
+.grid-items {
+  border: solid 1px rgba(0, 0, 0, 0.281);
+  padding: 2px;
+}
+.chgclr {
+  background: #fff;
+  -webkit-animation: random 10s infinite;
+  animation: random 5s infinite;
+}
+@keyframes random {
+  10% {
+    background-color: yellow;
+  }
+  20% {
+    background-color: green;
+  }
+  30% {
+    background-color: blue;
+  }
+  40% {
+    background-color: red;
+  }
+  50% {
+    background-color: blueviolet;
+  }
+  60% {
+    background-color: aqua;
+  }
+  70% {
+    background-color: chartreuse;
+  }
+  80% {
+    background-color: steelblue;
+  }
+  90% {
+    background-color: springgreen;
+  }
+  100% {
+    background-color: royalblue;
+  }
+}
