@@ -1,0 +1,120 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background: url(back.jpg);
+  background-size: cover;
+  font-family: "Mate SC", serif !important;
+  transition: all 0.5s;
+}
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  color: #fff;
+}
+#grid {
+  width: 60%;
+  height: 85%;
+  display: grid;
+  grid-template-rows: repeat(3fr, 5);
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 13px;
+}
+
+.flip-card {
+  background-color: transparent;
+  perspective: 1000px;
+}
+#stats {
+  text-align: center;
+  display: flex;
+  text-decoration-line: overline;
+}
+.flip-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.2s;
+  transform-style: preserve-3d;
+}
+.front,
+.back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.front {
+  /* background-color: #bbb; */
+  color: black;
+}
+
+.back {
+  background-color: #fffb0360;
+  transform: rotateY(180deg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.flipped {
+  transform: rotateY(180deg);
+}
+.hide {
+  visibility: hidden;
+}
+.popup {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  display: none;
+}
+.popup > div {
+  width: 300px;
+  height: 200px;
+  background-color: #fff;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 600px) {
+  h2 {
+    font-size: 1rem !important;
+  }
+}
+
+#reload {
+  border: 0;
+  background-color: yellow;
+  height: 40px;
+  width: 40px;
+  border-radius: 10px;
+  color: #fff;
+  vertical-align: top;
+  font-size: 1.2rem !important;
+  margin: 10px 0;
+}
+#reload:active,
+#reload:focus {
+  outline: none;
+}
