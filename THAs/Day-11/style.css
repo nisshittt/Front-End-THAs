@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap");
+* {
+  padding: 0px;
+  margin: 0px;
+  font-family: "Montserrat", sans-serif;
+}
+body {
+  background-image: linear-gradient(to right, #fc354c 20%, #0dcfcc);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  overflow: hidden;
+}
+.grid {
+  width: 600px;
+  height: 500px;
+  margin: 0 auto;
+  height: 400px;
+  width: 60%;
+  border-radius: 20px;
+  background: rgba(70, 68, 68, 0.212);
+  backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(2px);
+}
+#score {
+  color: #000;
+  text-align: center;
+  font-size: 30px;
+}
+#quiz {
+  color: #000;
+}
+.grid #question {
+  font-family: "Montserrat", sans-serif;
+  font-size: 23px;
+  color: black;
+  font-weight: 600;
+  margin-left: 130px;
+  margin-top: 40px;
+}
+
+.buttons {
+  margin-top: 90px;
+  margin-left: 120px;
+}
+
+#btn0,
+#btn1,
+#btn2,
+#btn3 {
+  background-color: transparent;
+  width: 250px;
+  font-size: 20px;
+  color: #000;
+  border-radius: 20px;
+  outline: 0;
+  border: 0;
+  font-weight: 600;
+  margin: 10px 40px 10px 0px;
+  padding: 10px 10px;
+  background: rgba(71, 67, 67, 0.212);
+  backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(2px);
+}
+
+#btn0:hover,
+#btn1:hover,
+#btn2:hover,
+#btn3:hover {
+  cursor: pointer;
+  background-color: transparent;
+}
+
+#btn0:focus,
+#btn1:focus,
+#btn2:focus,
+#btn3:focus {
+  outline: 0;
+  border: 0;
+  color: grey;
+}
+
+#progress {
+  color: black;
+  font-size: 25px;
+  font-weight: 600;
+  margin-left: 360px;
+  margin-top: 50px;
+}
+#result {
+  text-align: center;
+  margin-top: 18%;
+}
+
+label {
+  position: absolute;
+  top: 20px;
+  left: 37%;
+  font-size: 50px;
+  font-weight: 600;
+  color: black;
+}
+
