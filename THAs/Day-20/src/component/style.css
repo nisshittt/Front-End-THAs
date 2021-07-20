@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@200&display=swap');
+.App {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .cal-app-container {
+    
+    width: 350px;
+    height: 400px;
+    margin-top: 90px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    box-shadow: 2px 3px 9px -1px black;
+  }
+  .Card {
+    width: 80%;
+    /* border: 1px solid red; */
+    background: purple;
+    padding: 5px;
+    margin-top: 17px;
+    margin-left: 20px;
+    border-radius: 7px;
+    box-shadow: 3px 1px 9px -1px #3d581a;
+    height: 90px;
+    padding: 15px;
+    /* color: white; */
+  }
+  .Card h2 {
+    margin-bottom: 0;
+  }
+  .Card .action {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 30px;
+    
+  }
+  ::-webkit-scrollbar {
+    width: 12px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    box-shadow:iinset  0 0 6px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
+    
+  }
+  
