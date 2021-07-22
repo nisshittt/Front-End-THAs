@@ -14,7 +14,7 @@ const Board = () => {
       <div className="row">{boxes}</div>
       <div className="row">{boxes}</div>
       <div className="row">{boxes}</div>
-      <div className="row">{boxes}</div>
+      <div className="row">{boxes}</div
     </div>
   );
 };
