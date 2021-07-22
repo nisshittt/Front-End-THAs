@@ -3,7 +3,7 @@
   padding: 0;
 }
 body {
-  background: url(back.jpg);
+  background: url('back.jpg');
   background-size: cover;
   font-family: "Mate SC", serif !important;
   transition: all 0.5s;
