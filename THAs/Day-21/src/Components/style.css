@@ -1,0 +1,84 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+}
+h2{
+  margin-top: 30px;
+}
+.form button {
+  width: 200px;
+  padding: 10px 6px;
+  background-color: rgb(132, 0, 255);
+  color: aliceblue;
+  border: none;
+  border-radius: 3px;
+}
+
+.input {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 10px;
+  max-width: 400px;
+}
+.input input {
+  margin: 10px;
+  padding: 20px;
+  outline: none;
+  font-size: 25px;
+  height: 50px;
+  border: 1px black solid;
+}
+.card {
+  border: 1px solid rgb(55, 0, 87);
+  border-radius: 15px;
+  margin: 10px;
+  padding: 50px 20px;
+  height: 200px;
+  width: 500px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.button {
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+#edit {
+  background-color: #f00a57;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 20px;
+  margin: 4px 6px;
+  cursor: pointer;
+}
+
+#del {
+  background-color: rgb(230, 48, 48);
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 20px;
+  margin: 4px 6px;
+  cursor: pointer;
+}

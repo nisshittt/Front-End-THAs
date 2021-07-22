@@ -1,0 +1,15 @@
+h1, p {
+  font-family: Lato;
+}
+
+.App{
+  display: flex;
+  justify-content: center;
+}
+
+.data{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
