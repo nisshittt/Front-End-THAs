@@ -12,7 +12,7 @@ export default function CalCard({ cal, food, id, setData, data }) {
         <h1>{food && food}</h1>
         <button onClick={deleteEle}>Delete</button>
       </div>
-      <h2>consumed calorie {cal && cal} </h2>
+      <h2>consumed calorie {cal && cal} </h2
     </div>
   );
 }
